@@ -25,17 +25,17 @@ public class SimplifiedExpressions implements LogicExpressions {
 
   @Override
   public boolean expression1(boolean a) {
-    return thisShouldBeRemoved(); // Your code here.
+    return true;
   }
 
   @Override
   public boolean expression2(boolean a, boolean b) {
-    return thisShouldBeRemoved(); // Your code here.
+    return a | b;
   }
 
   @Override
   public boolean expression3(boolean a, boolean b) {
-    return thisShouldBeRemoved(); // Your code here.
+    return (!a & true) & (b & true);
   }
 
   @Override

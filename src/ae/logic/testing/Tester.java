@@ -20,10 +20,11 @@ public class Tester {
 
 		LogicExpressions simplifiedExpressions = new SimplifiedExpressions();
 
-		boolean A1 = true;
-		boolean A2 = true;
+		boolean A = false;
+		boolean B = true;
 
-		System.out.println(naivLogicExpressions.expression1(A1) == simplifiedExpressions.expression1(A2));
+		System.out.println(naivLogicExpressions.expression3(A, B));
+		System.out.println(simplifiedExpressions.expression3(A, B));
 
 	}
 
