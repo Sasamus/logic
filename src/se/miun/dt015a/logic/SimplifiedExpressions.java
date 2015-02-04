@@ -40,12 +40,12 @@ public class SimplifiedExpressions implements LogicExpressions {
 
   @Override
   public boolean expression4(boolean a, boolean b) {
-    return thisShouldBeRemoved(); // Your code here.
+    return a ^ b;
   }
 
   @Override
   public boolean expression5(boolean a, boolean b, boolean c) {
-    return thisShouldBeRemoved(); // Your code here.
+    return (a & c);
   }
 
   @Override
