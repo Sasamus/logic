@@ -62,9 +62,7 @@ public class SimplifiedExpressions implements LogicExpressions {
 
 	@Override
 	public boolean expression8(boolean a, boolean b, boolean c, boolean d) {
-		// return a & ((b | !c) | (c | d) & b) | d;
-		// return a & ((b | !c) | (b & c) | (b & d)) | d;
-		return (d | a) & (d | ((b | !c) | (b & c) | (b & d)));
+		return (d | a) & (d | ((b | false) | (!c | false)));
 	}
 
 	@Override
