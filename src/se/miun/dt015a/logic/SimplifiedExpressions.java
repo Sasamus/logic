@@ -1,6 +1,6 @@
 package se.miun.dt015a.logic;
 
-import java.util.Random; // You should remove this.
+// You should remove this.
 
 /**
  * This class implements LogicExpressions using simplified expressions. The
@@ -15,15 +15,6 @@ import java.util.Random; // You should remove this.
  */
 public class SimplifiedExpressions implements LogicExpressions {
 	// Do not add any instance variables or constructors.
-
-	// ========== You should remove this. ==========
-	private final Random rng = new Random();
-
-	private boolean thisShouldBeRemoved() {
-		return rng.nextBoolean();
-	}
-
-	// ========== You should remove this. ==========
 
 	@Override
 	public boolean expression1(boolean a) {
